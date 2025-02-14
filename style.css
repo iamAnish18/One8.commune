@@ -16,7 +16,7 @@ html,body{
 
 #main1{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     color: white;
     background-image: url(img.bg/One8-2.jpg);
     background-position: center;
@@ -60,18 +60,25 @@ h1{
 #main2{
     padding: 2.5vw;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     /* background-color: pink; */
     background-color: #FFFBF7;
 }
 #imagesabout{
+    padding-bottom: 2vw;
     display: flex;
     justify-content: center;
     gap: 2vw;
 }
+h3{
+    font-size: 3vw;
+}
+p{
+    font-size: 2vw;
+}
 #first{
     width: 25%;
-    height: 25vw;
+    height: 20vw;
     background-color: #FFFFFF;
     border: 1px solid white;
     border-radius: 1vw;
@@ -80,26 +87,30 @@ h1{
 }
 img{
     width: 100%;
-    height: 20vw;
+    height: 15vw;
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
     border: 1px solid white;
-    border-radius: 1vw;
+    border-radius: 1vw 1vw 0vw 0vw;
     border: none;
 }
 
 #second{
     width: 25%;
-    height: 25vw;
+    height: 20vw;
     background-color: #FFFFFF;
     border: 1px solid white;
     border-radius: 1vw;
     border: none;
     box-shadow: rgb(76 83 100) 0px 6.42623px 9.85246px;
 }
+
+#second img{
+    object-position: center;
+}
 #third{
     width: 25%;
-    height: 25vw;
+    height: 20vw;
     background-color: #FFFFFF;
     border: 1px solid white;
     border-radius: 1vw;
@@ -110,17 +121,45 @@ h2,p{
     padding-left: 0.6vw;
 }
 h4{
-    padding: 2vw 0vw 2vw 0vw;
+    padding: 1vw 0vw 1vw 0vw;
     font-size: 3vw;
 }
 
+
+#main3{
+    width: 100%;
+    min-height: 100vw;
+    background-color: #FFFBF7;
+}
+
+#vkimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 100%;
+    height: 40vw;
+    background-color: pink;
+    border: 1px solid black;
+}
+.swiper img{
+    width: 100%;
+    height: 40vw;
+    border-radius: 0vw;
+}
+#place{
+    padding: 0vw 2vw 2vw 2vw;
+}
 #allplace{
+    width: 85%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .ultra{
-    width: 75%;
+    width: 80%;
     border: 1px solid white;
     border-radius: 1vw;
     display: flex;
@@ -128,37 +167,17 @@ h4{
     justify-content: space-between;
     padding: 1vw;
     margin: 1vw;
-    box-shadow: rgba(75, 29, 186, 10.08) 0px 2.42623px 8.85246px;
+    box-shadow: rgb(76 83 100) 0px 6.42623px 9.85246px;
 }
-
+hr{
+    width: 97%;
+    margin: auto;
+}
 .ultra:hover{
     box-shadow: none;
     border: 1px solid black;
 }
 
-#allimg{
-    width: 100%;
-    height: 25vw;
-}
-
-#allimg .font{
-    font-size: 3vw;
-}
-
-#allimg .explain{
-    font-size: 1.5vw;
-}
-#vkimg{
-    padding-top: 2vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.swiper img{
-    width: 100%;
-    height: 20vw;
-    border-radius: none;
-}
 #type-question{
     font-size: 2vw;
     display: flex;
@@ -171,18 +190,87 @@ h4{
     margin: 2vw auto;
     border-radius: 1vw;
     cursor: pointer;
+    box-shadow: rgb(76 83 100) 0px 6.42623px 9.85246px;
+}
+
+#type-question :hover{
+    box-shadow: none;
 }
 .font{
+    padding-left: 2vw;
     font-size: 3vw;
 }
-#main3{
+
+#footer{
+    background-color: #F8F8F8;
     width: 100%;
-    height: 100vh;
-    /* background-color: red; */
-    padding-top: 5vw;
+    height: 30vw;
 }
+
+.result{
+    font-size: 2vw;
+    display: flex;
+    width: 90%;
+    padding: 1vw;
+    justify-content: space-around;
+}
+
+#footerlinks{
+    font-size: 1.5vw;
+    gap: 0.7vw;
+    display: flex;
+    flex-direction: column;
+}
+h5{
+    padding: 0vw 1vw 1vw 0vw;
+}
+#footerimglinks{
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+#footerimglinks img{
+    width: 2vw;
+    height: 2vw;
+}
+
+.last{
+    width: 90%;
+    font-size: 1.5vw;
+    margin: auto;
+}
+
 @media(max-width:900px){
     h1{
         font-size: 12vw;
+    }
+}
+
+@media(max-width:500px){
+    #imagesabout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #first{
+        width: 85%;
+        height: 53vw;
+    }
+    img{
+        width: 100%;
+        height: 40vw;
+        object-position: center;
+        object-fit: cover;
+    }
+    #second{
+        width: 85%;
+        height: 53vw;
+    }
+    #third{
+        width: 85%;
+        height: 53vw;
     }
 }
