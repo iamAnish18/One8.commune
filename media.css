@@ -1,0 +1,143 @@
+@media(max-width:900px){
+    h1{
+        font-size: 7vw;
+    }
+    #first{
+        height: 31vh;
+    }
+    #second{
+        height: 31vh;
+    }
+    #third{
+        height: 31vh;
+    }
+    #main1{
+        height: 80vh;
+        background-size: max(1200px, 100vw);
+    }
+    #main2{
+        height: 70vh;
+    }
+    #allplace{
+        width: 100%;
+    }
+    #type-question{
+        width: 90%;
+    }
+}
+
+@media(max-width:600px){
+    h3{
+        font-size: 7vw;
+    }
+    #main2{
+        min-height: 142vh
+    }
+    h1{
+        font-size: 10vw;
+    }
+    #main1{
+        height: 90vh;
+    }
+    #nav{
+        padding: 8vw;
+    }
+
+    #first{
+        height: 51vh;
+    }
+
+    #second{
+        height: 51vh;
+    }
+
+    #third{
+        height: 51vh;
+    }
+
+    p{
+        font-size: 5.5vw;
+    }
+
+    h4{
+        font-size: 7vw;
+    }
+    #imagesabout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #first{
+        width: 85%;
+        height: 53vw;
+    }
+    img{
+        width: 100%;
+        height: 40vw;
+        object-position: center;
+        object-fit: cover;
+    }
+    #allplace{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    #ultra{
+        width: 90%;
+    }
+    #placefonts{
+        font-size: 3.5vw;
+    }
+    .ultra9{
+        display: none;
+    }
+    .font{
+        font-size: 7vw;
+    }
+    #type-question{
+        width: 100%;
+    }
+    #explorefont{
+        font-size: 3.5vw;
+    }
+    h5{
+        font-size: 3.5vw;
+    }
+    a{
+        font-size: 3.5vw;
+    }
+    #footerimglinks img {
+        width: 6vw;
+        height: 6vw;
+    }
+    .last{
+        font-size: 3.5vw;
+    }
+    #second{
+        width: 85%;
+        height: 53vw;
+    }
+    #third{
+        width: 85%;
+        height: 53vw;
+    }
+}
+
+@media(max-width:344px){
+    #first {
+        width: 85%;
+        height: 56vw;
+    }
+    #second {
+        width: 85%;
+        height: 56vw;
+    }
+    #third {
+        width: 85%;
+        height: 56vw;
+    }
+    #main2 {
+        min-height: 125vh;
+    }
+}
